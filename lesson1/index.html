@@ -21,7 +21,7 @@ function init() {
 	canvas = document.getElementById("canvas");
 	anim_container = document.getElementById("animation_container");
 	dom_overlay_container = document.getElementById("dom_overlay_container");
-	var comp=AdobeAn.getComposition("37102F0D3D1E9344B2A1C7C75B30C095");
+	var comp=AdobeAn.getComposition("8949271D436D5C46B0FDC812C6820EB1");
 	var lib=comp.getLibrary();
 	var loader = new createjs.LoadQueue(false);
 	loader.installPlugin(createjs.Sound);
@@ -43,8 +43,9 @@ function handleComplete(evt,comp) {
 	for(i=0; i<ssMetadata.length; i++) {
 		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
 	}
-	exportRoot = new lib.maktabatiL1_HTML5Canvas();
-	stage = new lib.Stage(canvas);	
+	exportRoot = new lib.FACE_HTML5Canvas();
+	stage = new lib.Stage(canvas);
+	stage.enableMouseOver();	
 	//Registers the "tick" event listener.
 	fnStartAnimation = function() {
 		stage.addChild(exportRoot);
