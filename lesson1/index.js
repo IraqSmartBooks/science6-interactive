@@ -5396,8 +5396,6 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	this.actionFrames = [0,77,247,383,608,731,873,1072,1283,1464];
-	this.streamSoundSymbolsList[77] = [{id:"_1mp3copy",startFrame:77,endFrame:225,loop:1,offset:0}];
-	this.streamSoundSymbolsList[247] = [{id:"_2",startFrame:247,endFrame:351,loop:1,offset:0}];
 	this.streamSoundSymbolsList[383] = [{id:"_3",startFrame:383,endFrame:530,loop:1,offset:0}];
 	this.streamSoundSymbolsList[608] = [{id:"_4",startFrame:608,endFrame:702,loop:1,offset:0}];
 	this.streamSoundSymbolsList[731] = [{id:"_6",startFrame:731,endFrame:858,loop:1,offset:0}];
@@ -5411,12 +5409,10 @@ if (reversed == null) { reversed = false; }
 		 
 	}
 	this.frame_77 = function() {
-		var soundInstance = playSound("_1mp3copy",0);
-		this.InsertIntoSoundStreamData(soundInstance,77,225,1);
+		playSound("_1mp3copy");
 	}
 	this.frame_247 = function() {
-		var soundInstance = playSound("_2",0);
-		this.InsertIntoSoundStreamData(soundInstance,247,351,1);
+		playSound("_2");
 	}
 	this.frame_383 = function() {
 		var soundInstance = playSound("_3",0);
